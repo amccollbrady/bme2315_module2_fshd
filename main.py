@@ -142,7 +142,7 @@ plt.grid(True, alpha=0.3)
 plt.show()
 
 output_file = Path("TA_fat_fraction_summary.csv")
-results_df.to_csv(output_file, index=False)
+profiles_df.to_csv(output_file, index=False)
 print(f"Saved {output_file}")
 
 # Optional part:
