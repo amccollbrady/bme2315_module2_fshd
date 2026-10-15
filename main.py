@@ -3,7 +3,12 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
-DATA_DIR = Path("FSHD_TA_MRI_student_data_0020_TP1_TP2")
+DATA_DIR = (
+    Path(__file__).resolve().parent
+    / "FSHD_MRI_data"
+    / "FSHD_MRI_data"
+    / "FSHD_TA_MRI_data_0020_TP1_TP2"
+)
 manifest = pd.read_csv(DATA_DIR / "slice_info.csv")
 manifest
 
